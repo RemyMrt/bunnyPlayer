@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>OnRewind Test</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="Bunny Player" content="Onrewind technical test" />
+  <meta name="author" content="Remy Marty">
+  <meta name="keywords" content="remy marty,remy,marty,test technique,test,technique,onrewind,on rewind,on,rewind" />
+  <script src='js/player.js'></script>
+  <link rel="icon" type="image/ico" href="png/rabbit.png" />
+  <link rel="stylesheet" type="text/css" href="css/mediaPlayer.css">
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>Bunny Player</h1>
+    </header>
+
+    <!-- Player -->
+    <div id="player-content">
+      <div id='media-controls' style="display: none;">
+        <image id="play-pause" style="height:32px; width:32px" src="png/play.png" alt="play" class="floated" onclick='playPause();'/>
+        <div id='volume-controls' >
+          <img id="mute-unmute" class="floated" style="height:32px; width:32px" src="png/unmute.png" alt="mute" onclick='muteUnmute();'/>
+          <input id="vol-range" class="floated" style="height:32px; width:50px" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" style="display: block;"></input>
+        </div>
+        <progress id='progress-bar' class="floated" min='0' max='100' value='0'>0% played</progress>
+      </div>
+      <video id="player" >
+        <source src="https://s3-eu-west-1.amazonaws.com/onrewind-test-bucket/big_buck_bunny.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <span class="copyright">&copy; Rémy Marty</span>
+      </footer>
+
+    </div>
+  </body>
+  </html>

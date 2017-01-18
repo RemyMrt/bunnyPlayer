@@ -1,0 +1,25 @@
+{
+  "name": "bunnyPlayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RemyMrt/bunnyPlayer.git"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "serve-static": "^1.11.1",
+    "zombie": "^5.0.5"
+  }
+}
